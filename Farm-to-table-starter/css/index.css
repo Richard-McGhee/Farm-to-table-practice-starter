@@ -199,28 +199,63 @@ header {
   width: 45%;
   height: 40vh;
   margin: 2% 0;
+  display: flex;
+  align-items: flex-end;
 }
-.farm {
+.offers .promo:hover .hide {
+  display: block;
+}
+.offers .promo .hide {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4%;
+}
+.offers .farm {
   background-image: url('../images/barn.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.cooking {
+.offers .cooking {
   background-image: url('../images/cook.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.produce {
+.offers .produce {
   background-image: url('../images/produce.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.animals {
+.offers .animals {
   background-image: url('../images/sheep.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact h2 {
+  width: 100%;
+}
+#contact .left,
+#contact .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .left div,
+#contact .right div {
+  width: 55%;
+}
+#contact .left div {
+  width: 40%;
+  line-height: 2.5;
+}
+#contact .right div {
+  width: 70%;
 }

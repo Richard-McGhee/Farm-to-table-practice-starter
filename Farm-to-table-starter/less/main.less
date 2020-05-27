@@ -35,17 +35,65 @@
         width:45%;
         height:40vh;
         margin:2% 0;
+        display:flex;
+        align-items: flex-end;
+
+        &:hover{
+            .hide{
+                display:block;
+            }//this closes hide
+        }// this closes hover
+
+        .hide{
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 4%;
+        }//this closes hide
+
+    }//this closes promo
+
+    .farm{
+        .bg-img-stuff(url('../images/barn.jpg'));
+     }
+     .cooking{
+         .bg-img-stuff(url('../images/cook.jpg'));
+     }
+     .produce{
+         .bg-img-stuff(url('../images/produce.jpg'));
+     }
+     .animals{
+         .bg-img-stuff(url('../images/sheep.jpg'));
+     }
+}//this closes offers
+
+#contact{
+    display:flex;
+    flex-wrap: wrap;
+    
+    h2{
+        width: 100%;
     }
-}
-.farm{
-   .bg-img-stuff(url('../images/barn.jpg'));
-}
-.cooking{
-    .bg-img-stuff(url('../images/cook.jpg'));
-}
-.produce{
-    .bg-img-stuff(url('../images/produce.jpg'));
-}
-.animals{
-    .bg-img-stuff(url('../images/sheep.jpg'));
-}
+
+    .left, .right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 55%;
+        }
+    }
+
+    .left{
+        div{
+            width: 40%;
+            line-height: 2.5;
+        }
+    }
+
+    .right{
+        div{
+            width: 70%;
+        }
+    }
+}//this closes contact
