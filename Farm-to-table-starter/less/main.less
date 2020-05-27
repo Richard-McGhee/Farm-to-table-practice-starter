@@ -1,23 +1,51 @@
-//product section styles
-
+// product section styles 
 .container{
-    display: flex;
+    display:flex;
     justify-content: space-around;
-
     .box{
-        width: 20%;
-        text-align: center;
+        width:20%;
+        text-align:center;
         .bordered();
-        background-color: #fff;
-    }//this closes box
-}//this closes container
-
-//hero image section
-
+        background-color:#fff;
+    }// this closes box
+}// this closes container
+// hero image section 
 .hero-img{
-    background-image: url(../images/dirt.jpg);
-    height: 40vh;
+    .bg-img-stuff(url('../images/dirt.jpg'));
+    height:40vh;
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+}
+//about section styles 
+#about{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    .text{
+        width:60%;
+        .bordered();
+        text-align:center;
+    }
+}
+.offers{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    .promo{
+        width:45%;
+        height:40vh;
+        margin:2% 0;
+    }
+}
+.farm{
+   .bg-img-stuff(url('../images/barn.jpg'));
+}
+.cooking{
+    .bg-img-stuff(url('../images/cook.jpg'));
+}
+.produce{
+    .bg-img-stuff(url('../images/produce.jpg'));
+}
+.animals{
+    .bg-img-stuff(url('../images/sheep.jpg'));
 }

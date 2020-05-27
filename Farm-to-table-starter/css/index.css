@@ -157,6 +157,7 @@ header {
   background-image: url('../images/header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   margin-top: 5.5%;
 }
 .container {
@@ -171,9 +172,55 @@ header {
   background-color: #fff;
 }
 .hero-img {
-  background-image: url(../images/dirt.jpg);
+  background-image: url('../images/dirt.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   height: 40vh;
   background-attachment: fixed;
   background-size: cover;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .text {
+  width: 60%;
+  border: 2px solid #444;
+  padding: 4%;
+  text-align: center;
+}
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.offers .promo {
+  width: 45%;
+  height: 40vh;
+  margin: 2% 0;
+}
+.farm {
+  background-image: url('../images/barn.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cooking {
+  background-image: url('../images/cook.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.produce {
+  background-image: url('../images/produce.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.animals {
+  background-image: url('../images/sheep.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
