@@ -1,12 +1,23 @@
 // product section styles 
 .container{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+
+    @media @phone{
+        justify-content: center;
+    }
+
     .box{
         width:20%;
         text-align:center;
         .bordered();
         background-color:#fff;
+
+        @media @phone{
+            width: 80%;
+            margin: 2% 0;
+        }
     }// this closes box
 }// this closes container
 // hero image section 
@@ -25,6 +36,10 @@
         width:60%;
         .bordered();
         text-align:center;
+
+        @media @phone{
+            width: 80%;
+        }
     }
 }
 .offers{
@@ -48,6 +63,10 @@
             display: none;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 4%;
+
+            @media @phone{
+                display: block;
+            }
         }//this closes hide
 
     }//this closes promo
@@ -72,6 +91,10 @@
     
     h2{
         width: 100%;
+
+        @media @phone{
+            order: -1;
+        }
     }
 
     .left, .right{
@@ -82,18 +105,35 @@
         div{
             width: 55%;
         }
+
+        @media @phone{
+            width: 100%;
+        }
     }
 
     .left{
+        @media @phone{
+            order: 2;
+        }
+
         div{
             width: 40%;
             line-height: 2.5;
+
+            @media @phone{
+                width: 80%;
+                margin-top: 15%;
+            }
         }
     }
 
     .right{
+        @media @phone{
+            order: 1;
+        }
+
         div{
-            width: 70%;
+            width: 80%;
         }
     }
 }//this closes contact

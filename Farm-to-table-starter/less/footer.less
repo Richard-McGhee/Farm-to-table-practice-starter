@@ -3,9 +3,22 @@ footer{
     background-color:#fcb131;
     justify-content: space-between;
     color:#fff;
+    padding: 2% 0;
+    
+    @media @phone{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     div{
         width:33%;
         text-align:center;
+
+        @media @phone{
+            width: 80%;
+            margin: 5% 0;
+        }
+
         h3{
             color:#fff;
         }
@@ -38,4 +51,15 @@ footer{
             }
         }
     } // this closes the divs inside footer
+    .last{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 1%;
+
+        @media @phone{
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }// this closes the footer
